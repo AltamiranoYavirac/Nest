@@ -1,0 +1,13 @@
+<!-- src/app/technician-form/technician-form.component.html -->
+<form (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="technician.name" name="name" required />
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="technician.email" name="email" required />
+  
+    <label for="expertise">Expertise:</label>
+    <input type="text" id="expertise" [(ngModel)]="technician.expertise" name="expertise" required />
+  
+    <button type="submit">Create Technician</button>
+  </form>

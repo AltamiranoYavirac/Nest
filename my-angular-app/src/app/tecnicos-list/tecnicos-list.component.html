@@ -1,0 +1,7 @@
+<!-- src/app/technician-list/technician-list.component.html -->
+<h2>Technician List</h2>
+<ul>
+  <li *ngFor="let technician of technicians">
+    {{ technician.name }} ({{ technician.email }}) - Expertise: {{ technician.expertise }}
+  </li>
+</ul>
